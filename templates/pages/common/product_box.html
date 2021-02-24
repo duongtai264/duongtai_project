@@ -1,0 +1,15 @@
+<div class="row">
+    {% for product in Product %}
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-box">
+            <div class="card-shadow">
+                <a href="{% url 'product' product.id %}">
+                <img class="img-product-card" src="{{product.image.url}}" alt=""/>
+                <h4>{{product.name}}</h4>
+                <p>Loại: {{product.category}}</p>
+                <p style="color:#c60000">Giá chỉ: {{product.price}}</p>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+

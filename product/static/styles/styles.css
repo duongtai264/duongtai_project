@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: UtmAvo!important;
+}
+.row{
+    --bs-gutter-x: 0!important;
+}
+
+@font-face {
+    src: url(../fonts/Avo.ttf);
+    font-family: UtmAvo;
+}
+
+.container-fluid {
+    padding: 0px!important;
+}
+
+.container {
+    padding: 0px!important;
+}
+
+.header-nav {
+    box-shadow: 0.1em 0.1em 0.1em rgb(105, 105, 105);
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.topbar {
+    box-shadow: 0.1em 0.1em 0.1em rgba(95, 95, 95, 0.308);
+    padding: 10px 0 10px 0;
+}
+
+.header-nav>a {
+    display: inline-block;
+    padding: 10px;
+}
+.main_nav{
+    padding: 10px 0 10px 0;
+}
+.main_nav>a {
+    min-width: 8%;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.main_nav>a:hover {
+    color: #c60000;
+    transition: 300ms;
+    font-weight: bold;
+}
+
+.right-topbar {
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+}
+
+.right-topbar>a:hover {
+    color: rgb(61, 61, 61);
+}
+
+.right-topbar>a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    font-size: medium;
+}
+
+.active {
+    color: #c60000!important;
+}
+
+.image-logo {
+    max-width: 150px;
+    min-width: 100px;
+}
+
+.home_carousel {
+    height: 100%;
+    background-color: red;
+    display: block;
+}
+
+.home_carousel>img {
+    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+}
+.footer{
+    height: 300px;
+    background-color: aquamarine;
+}
+.img-product-card{
+    width: 100%;
+    height: 300px;
+    min-height: 250px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+.card-shadow{
+    padding: 10px;
+    text-align: center;
+}
+.card-shadow>a{
+    padding-bottom: 5px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    transition: 300ms;
+}
+.card-shadow>a:hover{
+    color: black;
+    box-shadow: 0em 0em 1em rgba(95, 95, 95, 0.603);
+    transition: 300ms;
+}
+.product-box{
+    max-height: 10%;
+}

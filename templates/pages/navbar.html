@@ -1,0 +1,21 @@
+{% load static %} {% url 'home' as home %} {% url 'product' as product %} {% url 'blog' as blog %} {% url 'about' as about %} {% url 'contact' as contact %}
+
+<div class="header-nav">
+    <div class="topbar row">
+        <div class="col-lg-4 left-topbar"></div>
+        <div class="col-lg-4 main-topbar">
+            <a href="/"><img src="{% static 'images/logo.png' %}" class="navbar-brand image-logo" alt=""></a>
+        </div>
+        <div class="col-lg-4 right-topbar">
+            <a href="/admin">Xin chào, {{request.user}}</a>
+        </div>
+    </div>
+
+    <nav class="main_nav">
+        <a class="{% if request.path == home %} active {% endif %}" href="/">Trang Chủ</a>
+        <a class="{% if request.path == product %} active {% endif %}" href="{% url 'product' %}">Sản Phẩm</a>
+        <a class="{% if request.path == blog %} active {% endif %}" href="{% url 'blog' %}">Bài Viết</a>
+        <a class="{% if request.path == about %} active {% endif %}" href="{% url 'about' %}">Giới Thiệu</a>
+        <a class="{% if request.path == contact %} active {% endif %}" href="{% url 'contact' %}">Liên Hệ</a>
+    </nav>
+</div>

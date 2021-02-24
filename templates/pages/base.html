@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}" type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        {% include 'pages/navbar.html' %} 
+        {% block content %} {% endblock %}
+    </div>
+
+    </div>
+
+
+    <script type="javascript" src="{% static 'js/bootstrap.min.js'%}"></script>
+</body>
+<footer>
+    {% include 'pages/footer.html' %}
+</footer>
+
+</html>
